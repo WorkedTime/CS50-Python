@@ -3,16 +3,14 @@ def main():
     moedas_aceitas = [25, 10, 5]
 
     while valor_guardado > 0:
-        print(f"Valor devido: {valor_guardado} centavos")
-        moeda = int(input("Insira uma moeda (5, 10 ou 25 centavos): "))
+        print(f'Amount Due: {valor_guardado}')
+        moeda = int(input('Insert Coin (5, 10 or 25): '))
         
         if moeda in moedas_aceitas:
             valor_guardado -= moeda
-        else:
-            print("Moeda não aceita.")
-
+            
     alteração = abs(valor_guardado)
-    print(f"Troco: {alteração} centavos")
+    print(f'Change Owed: {alteração}')
 
 if __name__ == "__main__":
     main()

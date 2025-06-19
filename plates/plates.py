@@ -1,7 +1,7 @@
 def main():
-    plate = input("Plate: ")
+    plate = input('Plate: ')
     if is_valid(plate):
-        print("Valid")
+        print('Valid')
     else:
         print("Invalid")
 

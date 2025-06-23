@@ -1,6 +1,6 @@
 import os
 
-resp = input('File name: ').strip().lower()
+resposta = input('File name: ').strip().lower()
 
 tipos = {
         '.gif': 'image/gif',
@@ -12,7 +12,8 @@ tipos = {
         '.zip': 'application/zip'
     }
 
-_, ext = os.path.splitext(resp)
+#Não preciso armazenar esta variavel
+_, ext = os.path.splitext(resposta)
 
 if ext in tipos:
     print(tipos[ext])

@@ -15,7 +15,6 @@ def main():
         if option not in ['-f', '--font']:
             sys.exit('Erro: opção inválida. Use -f ou --font.')
 
-        # Verifica se a fonte é válida
         if font_name not in pyfiglet.FigletFont.getFonts():
             sys.exit('Erro: fonte inválida.')
         
